@@ -1,0 +1,90 @@
+---
+title: "Enricher_IBD_model"
+output: html_document
+date: "2022-10-24"
+---
+
+Load packages
+```{r}
+library(clusterProfiler)
+library(msigdbr)
+library(tidyverse)
+library(fgsea)
+library(org.Hs.eg.db)
+library(AnnotationDbi)
+
+```
+
+Load data
+```{r}
+
+model.results = readxl::read_xlsx("downloads/GENE_LIST.xlsx")
+suppressMessages(model.results)
+
+```
+
+
+Get gene set database
+```{r}
+
+H <- msigdbr::msigdbr(species = "Homo sapiens", category = "H")
+
+#class(H)
+
+```
+
+
+
+Get gene name
+```{r}
+
+name <- unique(model.results$GENE_NAME)
+H.name <- dplyr::select(H, gs_name, gene_symbol)
+
+
+
+
+```
+
+Run ORA
+```{r}
+
+
+enrich.H <- enricher(gene = name, TERM2GENE = H.name)
+
+fit <- plot(barplot(enrich.H, showCategory = 9
+                    , title = "HALLMARK gene sets",))
+
+
+```
+ORA with GO biological pathways
+```{r}
+
+GO_results <- enrichGO(gene = name, OrgDb = "org.Hs.eg.db", keyType = "SYMBOL", ont = "BP")
+
+as.data.frame(GO_results)
+
+```
+
+```{r}
+
+fit <- plot(barplot(GO_results, showCategory = 5, title = "GO biological pathways"))
+#png("GO_analysis.png", res= 250, width = 1200, height = 1000)
+#print(fit)
+#dev.off()
+#fit
+```
+
+
+
+ORA with KEGG
+```{r}
+
+ENTREZ = mapIds(org.Hs.eg.db, keys = ID,  column="ENTREZID",keytype = "UNIPROT",multiVals="first")
+
+KEGG_results <- enrichKEGG(gene = ENTREZ, organism = "hsa" ,keyType = "ncbi-geneid")
+as.data.frame(KEGG_results)
+
+
+fit <- plot(barplot(KEGG_results, showCategory = 10, title = "KEGG pathways"))
+```
