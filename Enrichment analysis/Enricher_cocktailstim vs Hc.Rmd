@@ -15,7 +15,7 @@ library(org.Hs.eg.db)
 Load data
 ```{r}
 
-model.results = readxl::read_xlsx("downloads/Cocktail vs Hc.xlsx")
+model.results = readxl::read_xlsx("RNA datasets/Cocktail vs Hc.xlsx")
 suppressMessages(model.results)
 
 ```
