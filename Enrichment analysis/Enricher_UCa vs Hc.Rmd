@@ -17,7 +17,7 @@ Load data
 
 ```{r}
 
-model.results <-readxl::read_xlsx("downloads/UCa_vs_Hc.xlsx")
+model.results <-readxl::read_xlsx("RNA datasets/UCa_vs_Hc.xlsx")
 suppressMessages(model.results)
 
 ```
