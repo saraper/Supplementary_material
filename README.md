@@ -1,2 +1,3 @@
-# Supplementary_material
-Supplementary material of the IBD-IEC logical model including results from Enrichment analysis in R, RNAseq expression data, GINsim file and Jupyter file.
+# Supplementary_material for the analysis of the IBD-IEC model
+
+The GINsim file of the IBD-IEC logical model, and its documentation including literature supporting the biological interactions and the logical rules, are provided in the **Model-folder**. Moreover, the bulk RNA sequential datasets, R code and results from Hallmark gene set and Gene ontology (GO) enrichment analysis can be found in the **Enrichment analysis-folder**. In the **Model analysis-folder**, the Jupyter Notebook file and other necessary files needed to analysis the IBD-IEC model, and display the expression pattern in IBD, UC and CD patients, collected.
