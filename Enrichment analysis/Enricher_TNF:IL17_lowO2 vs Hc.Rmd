@@ -16,8 +16,8 @@ library(org.Hs.eg.db)
 Load data
 
 ```{r}
-setwd("~saraper/downloads")
-model.results <-readxl::read_xlsx("2_O2 TNFandIL17 vs Hc.xlsx")
+
+model.results <-readxl::read_xlsx("RNA datasets/2_O2 TNFandIL17 vs Hc.xlsx")
 suppressMessages(model.results)
 
 ```
