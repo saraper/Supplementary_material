@@ -16,7 +16,7 @@ Load data
 
 ```{r}
 setwd("~saraper/downloads")
-model.results <-readxl::read_xlsx("TNF vs unstimulated.xlsx")
+model.results <-readxl::read_xlsx("RNA datasets/TNF vs unstimulated.xlsx")
 suppressMessages(model.results)
 
 ```
