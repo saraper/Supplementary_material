@@ -9,10 +9,7 @@ Load packages
 library(clusterProfiler)
 library(msigdbr)
 library(tidyverse)
-library(fgsea)
 library(org.Hs.eg.db)
-library(AnnotationDbi)
-
 ```
 
 Load data
@@ -52,8 +49,7 @@ Run ORA
 
 enrich.H <- enricher(gene = name, TERM2GENE = H.name)
 
-fit <- plot(barplot(enrich.H, showCategory = 9
-                    , title = "HALLMARK gene sets",))
+fit <- plot(barplot(enrich.H, showCategory = 8,title = "HALLMARK gene sets"))
 
 
 ```
@@ -68,7 +64,7 @@ as.data.frame(GO_results)
 
 ```{r}
 
-fit <- plot(barplot(GO_results, showCategory = 5, title = "GO biological pathways"))
+fit <- plot(barplot(GO_results, showCategory = 6,title = "GO biological pathways"))
 #png("GO_analysis.png", res= 250, width = 1200, height = 1000)
 #print(fit)
 #dev.off()
@@ -76,15 +72,4 @@ fit <- plot(barplot(GO_results, showCategory = 5, title = "GO biological pathway
 ```
 
 
-
-ORA with KEGG
-```{r}
-
-ENTREZ = mapIds(org.Hs.eg.db, keys = ID,  column="ENTREZID",keytype = "UNIPROT",multiVals="first")
-
-KEGG_results <- enrichKEGG(gene = ENTREZ, organism = "hsa" ,keyType = "ncbi-geneid")
-as.data.frame(KEGG_results)
-
-
-fit <- plot(barplot(KEGG_results, showCategory = 10, title = "KEGG pathways"))
 ```

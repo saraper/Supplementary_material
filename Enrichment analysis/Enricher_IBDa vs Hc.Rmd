@@ -1,0 +1,81 @@
+---
+  title: "Enrichment analysis for IBDa vs Hc "
+output: html_document
+date: "2022-10-11"
+---
+  Load packages
+
+```{r}
+
+library(clusterProfiler)
+library(msigdbr)
+library(tidyverse)
+library(org.Hs.eg.db)
+```
+Load data
+
+```{r}
+
+model.results <-readxl::read_xlsx("downloads/IBDa vs Hc.xlsx")
+suppressMessages(model.results)
+
+
+```
+
+#Enrichment
+
+Get gene set database
+```{r}
+
+H <- msigdbr::msigdbr(species = "Homo sapiens", category = "H")
+H
+#class(H)
+
+```
+
+Define significant genes
+```{r}
+
+signif <- model.results %>%
+  filter(abs(logFC) >= 1)
+```
+
+Get gene name or ensembl ID
+```{r}
+#signif.ensembl <- unique(signif$ensembl_gene_id)
+#H.ensembl <- dplyr::select(H, gs_name, ensembl_gene)
+
+signif.name <- unique(signif$external_gene_name)
+H.name <- dplyr::select(H, gs_name, gene_symbol)
+
+```
+
+Run enrichment
+```{r}
+
+#enrich.H <- enricher(gene = signif.ensembl, TERM2GENE = H.ensembl)
+
+enrich.H <- enricher(gene = signif.name, TERM2GENE = H.name)
+
+fit <- plot(barplot(enrich.H, showCategory = 8, title = "HALLMARK gene sets"))
+
+```
+ORA with GO biological pathways
+```{r}
+
+GO_results <- enrichGO(gene = signif.name, OrgDb = "org.Hs.eg.db", keyType = "SYMBOL", ont = "BP")
+
+as.data.frame(GO_results)
+
+```
+
+```{r}
+
+fit <- plot(barplot(GO_results, showCategory = 6, title = "GO biological pathways"))
+#png("GO_analysis.png", res= 250, width = 1200, height = 1000)
+#print(fit)
+#dev.off()
+#fit
+```
+
+
