@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
     <title>IBD_logical_model</title>
-    <meta name="created-at" content="2023-05-05 15:02:27"/>
+    <meta name="created-at" content="2023-05-05 16:00:38"/>
     <meta name="generator" content="GINsim"/>
     <style type="text/css">
 table {border-collapse: collapse;}
@@ -80,7 +80,7 @@ window.onload = makeStableStatesClickable;
     <h1>Description of the model "IBD_logical_model"</h1>
     <img src="GINsim documentation.xhtml_FILES/model.png"/>
     <h2>Annotation</h2>
-    <p>The logical model represents the behaviour of intestinal epithelial cells during the chronic stage of inflammatory bowel disease in response to the main cytokines and pathogen-related entities present in the local environment. <br /><br />The main cytokines that account for the characteristic cytokine milieu are TNF and IFNg (namely derived from Th1 cells), and IL-17 and IL-22 (namely derived from Th17 cells). Pathways activated by these cytokines are acquired from the psoKC (psoriatic keratinocyte) model created by Eirini Tsirvouli. <br /><br />Type I and III interferon signalling is also included in the model, where several of the IBD-associated genes are involved in these pathways (e.g. JAK2, TYK2, STAT1). Moreover, since microbial dysbiosis plays an important role in development and relapse of IBD, some bacterial components are added (LPS, PGN and MDP) as inputs which triggers the activation of PPRs and their downstream pathways.</p>
+    <p>The logical model represents the behaviour of intestinal epithelial cells (IECs) during the chronic stage of inflammatory bowel disease (IBD) in response to the main cytokines and pathogen-related entities present in the local environment. <br /><br />The main cytokines that account for the characteristic cytokine milieu are TNF and IFNg (namely derived from Th1 cells), and IL-17 and IL-22 (namely derived from Th17 cells). Pathways activated by these cytokines are acquired and modified from the psoKC (psoriatic keratinocyte) model created by Eirini Tsirvouli et al. <br /><br />Type I and III interferon signaling is also included in the model, where several of the IBD-associated genes are involved in these pathways (e.g. JAK2, TYK2, STAT1). Moreover, since microbial dysbiosis plays an important role in development and relapse of IBD, some bacterial components are added (LPS, PGN and MDP) as inputs which triggers the activation of PPRs and their downstream pathways. Finally, signaling through IL1R was included in the model, since IL1b plays a central role in the intestinal inflammation cascade.</p>
     <ol class="links">
       <li>
         <a href=":"></a>
@@ -259,7 +259,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>mTORC1</th>
               <td>
-                <p>MTORC1, which serves as a major suppressor of autophagy, </p>
+                <p>MTORC1 serves as a major suppressor of autophagy.</p>
                 <ol class="links">
                   <li>
                     <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6526825/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6526825/</a>
@@ -281,7 +281,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>NOD1</th>
               <td>
-                <p>Travassos et al. showed that NOD1 and NOD2 can recruit ATG16L1 to the plasma membrane</p>
+                <p>Travassos et al. showed that NOD1 and NOD2 can recruit ATG16L1 to the plasma membrane.</p>
                 <ol class="links">
                   <li>
                     <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6536010/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6536010/</a>
@@ -360,23 +360,23 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
-              <th>TLR2</th>
+              <th>IL1R</th>
               <td>
-                <p>MyD88 is a cytosolic adapter molecule connecting TLRs and IL-1Rs to the IRAK complex.</p>
+                <p>MyD88 mediates signaling downstream of TLRs and IL-1 family members.</p>
                 <ol class="links">
                   <li>
-                    <a href="Picard C, Casanova JL, Puel A. Infectious diseases in patients with IRAK-4, MyD88, NEMO, or IκBα deficiency. Clin Microbiol Rev. 2011;24(3):490-497. doi:10.1128/CMR.00001-11">Picard C, Casanova JL, Puel A. Infectious diseases in patients with IRAK-4, MyD88, NEMO, or IκBα deficiency. Clin Microbiol Rev. 2011;24(3):490-497. doi:10.1128/CMR.00001-11</a>
+                    <a href="https://www.jci.org/articles/view/154993">https://www.jci.org/articles/view/154993</a>
                   </li>
                 </ol>
               </td>
             </tr>
             <tr>
-              <th>IL1R</th>
+              <th>TLR4</th>
               <td>
-                <p>MyD88 mediates signaling downstream of TLRs and IL-1 family members</p>
+                <p>Medzhitov's lab showed the crucial role of TLR4/MyD88 signaling for the maintenance of the intestinal homeostasis and barrier repair during acute DSS colitis in microbiota dependent manner (53). </p>
                 <ol class="links">
                   <li>
-                    <a href="https://www.jci.org/articles/view/154993">https://www.jci.org/articles/view/154993</a>
+                    <a href="Semin I, Ninnemann J, Bondareva M, Gimaev I, Kruglov AA. Interplay Between Microbiota, Toll-Like Receptors and Cytokines for the Maintenance of Epithelial Barrier Integrity. Front Med (Lausanne). 2021;8:644333. Published 2021 May 28. doi:10.3389/fmed.2021.644333">Semin I, Ninnemann J, Bondareva M, Gimaev I, Kruglov AA. Interplay Between Microbiota, Toll-Like Receptors and Cytokines for the Maintenance of Epithelial Barrier Integrity. Front Med (Lausanne). 2021;8:644333. Published 2021 May 28. doi:10.3389/fmed.2021.644333</a>
                   </li>
                 </ol>
               </td>
@@ -393,12 +393,12 @@ window.onload = makeStableStatesClickable;
               </td>
             </tr>
             <tr>
-              <th>TLR4</th>
+              <th>TLR2</th>
               <td>
-                <p>Medzhitov's lab showed the crucial role of TLR4/MyD88 signaling for the maintenance of the intestinal homeostasis and barrier repair during acute DSS colitis in microbiota dependent manner (53). Activation of TLR4 signaling pathways was crucial for the clearance of commensal bacteria by infiltrating innate immune cells (54). In contrast, several other studies highlighted the pathogenic function of TLR4 signaling in DSS colitis. In particular, an increase of E. Coli in the microbiota was associated with less severe colitis in TLR4 deficient mice (55). LPS, main TLR4 agonist, also may induce epithelial damage in vitro and in vivo via excessive phosphorylation of the focal actin kinase (FAK) in TLR4/MyD88 dependent pathway in epithelial cells (56). </p>
+                <p>MyD88 is a cytosolic adapter molecule connecting TLRs and IL-1Rs to the IRAK complex.</p>
                 <ol class="links">
                   <li>
-                    <a href="Semin I, Ninnemann J, Bondareva M, Gimaev I, Kruglov AA. Interplay Between Microbiota, Toll-Like Receptors and Cytokines for the Maintenance of Epithelial Barrier Integrity. Front Med (Lausanne). 2021;8:644333. Published 2021 May 28. doi:10.3389/fmed.2021.644333">Semin I, Ninnemann J, Bondareva M, Gimaev I, Kruglov AA. Interplay Between Microbiota, Toll-Like Receptors and Cytokines for the Maintenance of Epithelial Barrier Integrity. Front Med (Lausanne). 2021;8:644333. Published 2021 May 28. doi:10.3389/fmed.2021.644333</a>
+                    <a href="Picard C, Casanova JL, Puel A. Infectious diseases in patients with IRAK-4, MyD88, NEMO, or IκBα deficiency. Clin Microbiol Rev. 2011;24(3):490-497. doi:10.1128/CMR.00001-11">Picard C, Casanova JL, Puel A. Infectious diseases in patients with IRAK-4, MyD88, NEMO, or IκBα deficiency. Clin Microbiol Rev. 2011;24(3):490-497. doi:10.1128/CMR.00001-11</a>
                   </li>
                 </ol>
               </td>
@@ -478,12 +478,23 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
-              <th>IRAK_complex</th>
+              <th>TRAF3IP2</th>
               <td>
-                <p>TLR4 signaling leads to interleukine-1 receptor associated kinase-1 (IRAK1) and tumor necrosis factor (TNF) receptor associated factor6 (TRAF6) activation which ultimately results in nuclear factor- ĸB (NF-ĸB) activation as the main transcription factor of inflammatory cytokines. </p>
+                <p>triggering homotypic interaction of IL17RA and IL17RC chains with TRAF3IP2 adapter. This leads to downstream TRAF6-mediated activation of NF-kappa-B and MAPkinase pathways.</p>
                 <ol class="links">
                   <li>
-                    <a href="Hajivalili M, Pourgholi F, Majidi J, et al. G2013 modulates TLR4 signaling pathway in IRAK-1 and TARF-6 dependent and miR-146a independent manner. Cell Mol Biol (Noisy-le-grand). 2016;62(4):1-5. Published 2016 Apr 30.">Hajivalili M, Pourgholi F, Majidi J, et al. G2013 modulates TLR4 signaling pathway in IRAK-1 and TARF-6 dependent and miR-146a independent manner. Cell Mol Biol (Noisy-le-grand). 2016;62(4):1-5. Published 2016 Apr 30.</a>
+                    <a href="https://www.uniprot.org/uniprotkb/Q16552/entry">https://www.uniprot.org/uniprotkb/Q16552/entry</a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th>TNFAIP3</th>
+              <td>
+                <p>A20 (also known as the TNFα-induced protein 3; TNFAIP3). A20 inhibits NF-κB signaling by removing polyubiquitin chains form TNF receptor associated factor 6 (TRAF6) and receptor interacting protein 2 (RIP2) during TLR/IL-1R and NOD signaling, respectively.</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://link.springer.com/article/10.1007/s10787-017-0309-4">https://link.springer.com/article/10.1007/s10787-017-0309-4</a>
                   </li>
                 </ol>
               </td>
@@ -500,23 +511,12 @@ window.onload = makeStableStatesClickable;
               </td>
             </tr>
             <tr>
-              <th>TRAF3IP2</th>
+              <th>IRAK_complex</th>
               <td>
-                <p>triggering homotypic interaction of IL17RA and IL17RC chains with TRAF3IP2 adapter. This leads to downstream TRAF6-mediated activation of NF-kappa-B and MAPkinase pathways</p>
+                <p>TLR4 signaling leads to interleukine-1 receptor associated kinase-1 (IRAK1) and tumor necrosis factor (TNF) receptor associated factor6 (TRAF6) activation which ultimately results in nuclear factor- ĸB (NF-ĸB) activation as the main transcription factor of inflammatory cytokines. </p>
                 <ol class="links">
                   <li>
-                    <a href="https://www.uniprot.org/uniprotkb/Q16552/entry">https://www.uniprot.org/uniprotkb/Q16552/entry</a>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <th>TNFAIP3</th>
-              <td>
-                <p>A20 (also known as the TNFα-induced protein 3; TNFAIP3). A20 inhibits NF-κB signaling by removing polyubiquitin chains form TNF receptor associated factor 6 (TRAF6) and receptor interacting protein 2 (RIP2) during TLR/IL-1R and NOD signaling, respectively</p>
-                <ol class="links">
-                  <li>
-                    <a href="https://link.springer.com/article/10.1007/s10787-017-0309-4">https://link.springer.com/article/10.1007/s10787-017-0309-4</a>
+                    <a href="Hajivalili M, Pourgholi F, Majidi J, et al. G2013 modulates TLR4 signaling pathway in IRAK-1 and TARF-6 dependent and miR-146a independent manner. Cell Mol Biol (Noisy-le-grand). 2016;62(4):1-5. Published 2016 Apr 30.">Hajivalili M, Pourgholi F, Majidi J, et al. G2013 modulates TLR4 signaling pathway in IRAK-1 and TARF-6 dependent and miR-146a independent manner. Cell Mol Biol (Noisy-le-grand). 2016;62(4):1-5. Published 2016 Apr 30.</a>
                   </li>
                 </ol>
               </td>
@@ -548,6 +548,17 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
+              <th>PPARG</th>
+              <td>
+                <p>Nuclear Factor kappa-light-chain-enhancer of activated B cells (NF-κB) and c-Jun NH2-terminal kinase (JNK)/p38 mitogen-activated protein kinase (MAPK) pathway activation. PPARs are important for IBD because many of these signaling pathways are downregulated by the activation of PPARγ.</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://www.frontiersin.org/articles/10.3389/fphar.2020.00730/full">https://www.frontiersin.org/articles/10.3389/fphar.2020.00730/full</a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
               <th>NFKBIA</th>
               <td>
                 <p>The encoded protein interacts with REL dimers to inhibit NF-kappa-B/REL complexes which are involved in inflammatory responses.</p>
@@ -561,21 +572,10 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>IKBKB</th>
               <td>
-                <p>In addition to the NF-kappa-B inhibitors, phosphorylates several other components of the signaling pathway including NEMO/IKBKG, NF-kappa-B subunits RELA and NFKB1</p>
+                <p>In addition to the NF-kappa-B inhibitors, phosphorylates several other components of the signaling pathway including NEMO/IKBKG, NF-kappa-B subunits RELA and NFKB1.</p>
                 <ol class="links">
                   <li>
                     <a href="https://www.uniprot.org/uniprotkb/O14920/entry">https://www.uniprot.org/uniprotkb/O14920/entry</a>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <th>PPARG</th>
-              <td>
-                <p>Nuclear Factor kappa-light-chain-enhancer of activated B cells (NF-κB) and c-Jun NH2-terminal kinase (JNK)/p38 mitogen-activated protein kinase (MAPK) pathway activation. PPARs are important for IBD because many of these signaling pathways are downregulated by the activation of PPARγ (</p>
-                <ol class="links">
-                  <li>
-                    <a href="https://www.frontiersin.org/articles/10.3389/fphar.2020.00730/full">https://www.frontiersin.org/articles/10.3389/fphar.2020.00730/full</a>
                   </li>
                 </ol>
               </td>
@@ -604,23 +604,23 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
+              <th>CREB1</th>
+              <td>
+                <p>CREB is induced by a variety of growth factors and inflammatory signals and subsequently mediates the transcription of genes containing a cAMP-responsive element. Several immune-related genes possess this cAMP-responsive element, including IL-2, IL-6, IL-10, and TNF-α. </p>
+                <ol class="links">
+                  <li>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/21084670/">https://pubmed.ncbi.nlm.nih.gov/21084670/</a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
               <th>NFKB</th>
               <td>
                 <p>TNFA gene expression itself is regulated by NFκB. </p>
                 <ol class="links">
                   <li>
                     <a href="Ruder B, Atreya R, Becker C. Tumour Necrosis Factor Alpha in Intestinal Homeostasis and Gut Related Diseases. Int J Mol Sci. 2019;20(8):1887. Published 2019 Apr 16. doi:10.3390/ijms20081887">Ruder B, Atreya R, Becker C. Tumour Necrosis Factor Alpha in Intestinal Homeostasis and Gut Related Diseases. Int J Mol Sci. 2019;20(8):1887. Published 2019 Apr 16. doi:10.3390/ijms20081887</a>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <th>CREB1</th>
-              <td>
-                <p>CREB is induced by a variety of growth factors and inflammatory signals and subsequently mediates the transcription of genes containing a cAMP-responsive element. Several immune-related genes possess this cAMP-responsive element, including IL-2, IL-6, IL-10, and TNF-α. I</p>
-                <ol class="links">
-                  <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/21084670/">https://pubmed.ncbi.nlm.nih.gov/21084670/</a>
                   </li>
                 </ol>
               </td>
@@ -756,7 +756,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>IRF1</th>
               <td>
-                <p>IRF1 is a transcription factor that can provide additional positive feedback stimulation of ISGs,</p>
+                <p>IRF1 is a transcription factor that can provide additional positive feedback stimulation of ISGs.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/35790340/">https://pubmed.ncbi.nlm.nih.gov/35790340/</a>
@@ -767,7 +767,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>IRF_complex</th>
               <td>
-                <p>phosphorylation and translocation of IRF3 and IRF7, initiating the transcription of interferon (IFN)-β, IFN-λ,</p>
+                <p>phosphorylation and translocation of IRF3 and IRF7, initiating the transcription of interferon (IFN)-β, IFN-λ.</p>
                 <ol class="links">
                   <li>
                     <a href="Guo L, Xu XQ, Zhou L, et al. Human Intestinal Epithelial Cells Release Antiviral Factors That Inhibit HIV Infection of Macrophages. Front Immunol. 2018;9:247. Published 2018 Feb 19. doi:10.3389/fimmu.2018.00247">Guo L, Xu XQ, Zhou L, et al. Human Intestinal Epithelial Cells Release Antiviral Factors That Inhibit HIV Infection of Macrophages. Front Immunol. 2018;9:247. Published 2018 Feb 19. doi:10.3389/fimmu.2018.00247</a>
@@ -801,7 +801,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>IRF_complex</th>
               <td>
-                <p>phosphorylation and translocation of IRF3 and IRF7, initiating the transcription of interferon (IFN)-β, IFN-λ,</p>
+                <p>phosphorylation and translocation of IRF3 and IRF7, initiating the transcription of interferon (IFN)-β, IFN-λ.</p>
                 <ol class="links">
                   <li>
                     <a href="Guo L, Xu XQ, Zhou L, et al. Human Intestinal Epithelial Cells Release Antiviral Factors That Inhibit HIV Infection of Macrophages. Front Immunol. 2018;9:247. Published 2018 Feb 19. doi:10.3389/fimmu.2018.00247">Guo L, Xu XQ, Zhou L, et al. Human Intestinal Epithelial Cells Release Antiviral Factors That Inhibit HIV Infection of Macrophages. Front Immunol. 2018;9:247. Published 2018 Feb 19. doi:10.3389/fimmu.2018.00247</a>
@@ -904,6 +904,12 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
+              <th>TRAF2</th>
+              <td>
+                <p>We found that TNF-R1-mediated IKK activation requires both RIP and TRAF2 proteins. Although TRAF2 or RIP can be independently recruited to the TNF-R1 complex, neither one of them alone is capable of transducing the TNF signal that leads to IKK activation.</p>
+              </td>
+            </tr>
+            <tr>
               <th>AKT</th>
               <td>
                 <p>AKT activates IKK</p>
@@ -934,12 +940,6 @@ window.onload = makeStableStatesClickable;
                     <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5007618/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5007618/</a>
                   </li>
                 </ol>
-              </td>
-            </tr>
-            <tr>
-              <th>TRAF2</th>
-              <td>
-                <p>We found that TNF-R1-mediated IKK activation requires both RIP and TRAF2 proteins. Although TRAF2 or RIP can be independently recruited to the TNF-R1 complex, neither one of them alone is capable of transducing the TNF signal that leads to IKK activation.</p>
               </td>
             </tr>
           </table>
@@ -1068,23 +1068,23 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
-              <th>FADD</th>
-              <td>
-                <p>We show that tradd interacts strongly with rip;rip is a serinethreonine kinase that is recruited by tradd to tnfr1 in a tnf-dependent process.</p>
-                <ol class="links">
-                  <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/8612133/">https://pubmed.ncbi.nlm.nih.gov/8612133/</a>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
               <th>TRAF6</th>
               <td>
                 <p> TRAF6 recruits RIP-1, which activates the TAK1 complex following MAPK activation. </p>
                 <ol class="links">
                   <li>
                     <a href="https://www.frontiersin.org/articles/10.3389/fimmu.2014.00461/full">https://www.frontiersin.org/articles/10.3389/fimmu.2014.00461/full</a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th>FADD</th>
+              <td>
+                <p>We show that tradd interacts strongly with rip;rip is a serinethreonine kinase that is recruited by tradd to tnfr1 in a tnf-dependent process.</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/8612133/">https://pubmed.ncbi.nlm.nih.gov/8612133/</a>
                   </li>
                 </ol>
               </td>
@@ -1124,23 +1124,23 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
+              <th>NFKB</th>
+              <td>
+                <p>NF-κB is found in the cytoplasm in its inactive form with the inhibitor of NF-κB subunit.</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/25352295/">https://pubmed.ncbi.nlm.nih.gov/25352295/</a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
               <th>IKBKB</th>
               <td>
                 <p>The protein encoded by this gene phosphorylates the inhibitor in the inhibitor/NF-kappa-B complex, causing dissociation of the inhibitor and activation of NF-kappa-B. </p>
                 <ol class="links">
                   <li>
                     <a href="https://www.ncbi.nlm.nih.gov/gene/3551#summary">https://www.ncbi.nlm.nih.gov/gene/3551#summary</a>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <th>NFKB</th>
-              <td>
-                <p>NF-κB is found in the cytoplasm in its inactive form with the inhibitor of NF-κB subunit</p>
-                <ol class="links">
-                  <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/25352295/">https://pubmed.ncbi.nlm.nih.gov/25352295/</a>
                   </li>
                 </ol>
               </td>
@@ -1171,7 +1171,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>NFKB</th>
               <td>
-                <p>Known factors that control IL-36 expression are pro-inflammatory cytokines including IL-18, IL-1β and IFN-γ, as well as the TLR ligands, CpG, LPS, Poly I:C</p>
+                <p>Known factors that control IL-36 expression are pro-inflammatory cytokines including IL-18, IL-1β and IFN-γ, as well as the TLR ligands, CpG, LPS, Poly I:C.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/33501638/">https://pubmed.ncbi.nlm.nih.gov/33501638/</a>
@@ -1185,7 +1185,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>STAT1</th>
               <td>
-                <p>Known factors that control IL-36 expression are pro-inflammatory cytokines including IL-18, IL-1β and IFN-γ,</p>
+                <p>Known factors that control IL-36 expression are pro-inflammatory cytokines including IL-18, IL-1β and IFN-γ.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/33501638/">https://pubmed.ncbi.nlm.nih.gov/33501638/</a>
@@ -1230,7 +1230,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>AP1</th>
               <td>
-                <p> IL-1beta and GM-CSF. These mediators are downstream targets for the transcription factors activator protein-1 (AP-1) and nuclear factor-kappaB (NF-kappaB)</p>
+                <p> IL-1beta and GM-CSF. These mediators are downstream targets for the transcription factors activator protein-1 (AP-1) and nuclear factor-kappaB (NF-kappaB).</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/11488985/">https://pubmed.ncbi.nlm.nih.gov/11488985/</a>
@@ -1326,12 +1326,12 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
-              <th>IFNLR</th>
+              <th>IL22R</th>
               <td>
-                <p>Engagement of all IFNs with their receptors initiates downstream signaling events, namely, activation of the JAK–STAT signaling cascade. JAK1, TYK2, and potentially JAK2 are phosphorylated and activated,</p>
+                <p> The IL22R signal is transmitted through the activation of JAK1 (mobile kinase IL22R1) and Tyk2 (mobile kinase IL10R2). </p>
                 <ol class="links">
                   <li>
-                    <a href="https://www.frontiersin.org/articles/10.3389/fimmu.2017.01707/full">https://www.frontiersin.org/articles/10.3389/fimmu.2017.01707/full</a>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/29037907/">https://pubmed.ncbi.nlm.nih.gov/29037907/</a>
                   </li>
                 </ol>
               </td>
@@ -1339,7 +1339,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>PTPN2</th>
               <td>
-                <p>The PTPN2 gene encodes the T-cell<br />protein tyrosine phosphatase (TCPTP), which is essential for regulation of in-<br />flammation. TCPTP partly modulates inflammation via control of inflamma-<br />tory signaling pathways, by namely inhibiting Janus kinase (JAK) enzymes,<br />and signal transducer and activator of transcription (STAT) molecules</p>
+                <p>The PTPN2 gene encodes the T-cell<br />protein tyrosine phosphatase (TCPTP), which is essential for regulation of in-<br />flammation. TCPTP partly modulates inflammation via control of inflamma-<br />tory signaling pathways, by namely inhibiting Janus kinase (JAK) enzymes,<br />and signal transducer and activator of transcription (STAT) molecules.</p>
                 <ol class="links">
                   <li>
                     <a href="https://researchoutreach.org/articles/inflammatory-bowel-disease-epithelial-barrier-function/">https://researchoutreach.org/articles/inflammatory-bowel-disease-epithelial-barrier-function/</a>
@@ -1348,12 +1348,12 @@ window.onload = makeStableStatesClickable;
               </td>
             </tr>
             <tr>
-              <th>IL22R</th>
+              <th>IFNLR</th>
               <td>
-                <p> The IL22R signal is transmitted through the activation of JAK1 (mobile kinase IL22R1) and Tyk2 (mobile kinase IL10R2). </p>
+                <p>Engagement of all IFNs with their receptors initiates downstream signaling events, namely, activation of the JAK–STAT signaling cascade. JAK1, TYK2, and potentially JAK2 are phosphorylated and activated.</p>
                 <ol class="links">
                   <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/29037907/">https://pubmed.ncbi.nlm.nih.gov/29037907/</a>
+                    <a href="https://www.frontiersin.org/articles/10.3389/fimmu.2017.01707/full">https://www.frontiersin.org/articles/10.3389/fimmu.2017.01707/full</a>
                   </li>
                 </ol>
               </td>
@@ -1401,7 +1401,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>JAK1_TYK2</th>
               <td>
-                <p>Janus kinase 1 (JAK1) and tyrosine kinase 2 (TYK2) which phosphorylates STAT1 and STAT2. The STAT1/STAT2 heterodimer can interact with IRF9 to create IFN-stimulated gene factor 3 (ISGF3)</p>
+                <p>Janus kinase 1 (JAK1) and tyrosine kinase 2 (TYK2) which phosphorylates STAT1 and STAT2. The STAT1/STAT2 heterodimer can interact with IRF9 to create IFN-stimulated gene factor 3 (ISGF3).</p>
                 <ol class="links">
                   <li>
                     <a href="Østvik AE, Svendsen TD, Granlund AVB, Doseth B, Skovdahl HK, Bakke I, Thorsvik S, Afroz W, Walaas GA, Mollnes TE, Gustafsson BI, Sandvik AK, Bruland T. Intestinal Epithelial Cells Express Immunomodulatory ISG15 During Active Ulcerative Colitis and Crohn's Disease. J Crohns Colitis. 2020 Jul 30;14(7):920-934. doi: 10.1093/ecco-jcc/jjaa022. PMID: 32020185; PMCID: PMC7392169.">Østvik AE, Svendsen TD, Granlund AVB, Doseth B, Skovdahl HK, Bakke I, Thorsvik S, Afroz W, Walaas GA, Mollnes TE, Gustafsson BI, Sandvik AK, Bruland T. Intestinal Epithelial Cells Express Immunomodulatory ISG15 During Active Ulcerative Colitis and Crohn's Disease. J Crohns Colitis. 2020 Jul 30;14(7):920-934. doi: 10.1093/ecco-jcc/jjaa022. PMID: 32020185; PMCID: PMC7392169.</a>
@@ -1469,18 +1469,12 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>NFKB</th>
               <td>
-                <p>Activation of NF-kB and MAPKs in IECs triggers secretion of interleukins and chemokines, such as C-X-C motif chemokine ligand 8 (CXCL8)</p>
+                <p>Activation of NF-kB and MAPKs in IECs triggers secretion of interleukins and chemokines, such as C-X-C motif chemokine ligand 8 (CXCL8).</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/32020185/">https://pubmed.ncbi.nlm.nih.gov/32020185/</a>
                   </li>
                 </ol>
-              </td>
-            </tr>
-            <tr>
-              <th>AP1</th>
-              <td>
-                <p>Activation of NF-kB and MAPKs in IECs triggers secretion of interleukins and chemokines, such as C-X-C motif chemokine ligand 8 (CXCL8)</p>
               </td>
             </tr>
             <tr>
@@ -1490,6 +1484,17 @@ window.onload = makeStableStatesClickable;
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/22197944/">https://pubmed.ncbi.nlm.nih.gov/22197944/</a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th>AP1</th>
+              <td>
+                <p>Activation of NF-kB and MAPKs in IECs triggers secretion of interleukins and chemokines, such as C-X-C motif chemokine ligand 8 (CXCL8).</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://academic.oup.com/ecco-jcc/article/14/7/920/5727513?login=false">https://academic.oup.com/ecco-jcc/article/14/7/920/5727513?login=false</a>
                   </li>
                 </ol>
               </td>
@@ -1520,7 +1525,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>NFKB</th>
               <td>
-                <p>blocking the activation of NF-kappaB by MG-132 or antisense p50 oligonucleotide transfection resulted in down-regulated expression of chemokines such as CXCL1, CXCL8, and CCL2</p>
+                <p>blocking the activation of NF-kappaB by MG-132 or antisense p50 oligonucleotide transfection resulted in down-regulated expression of chemokines such as CXCL1, CXCL8, and CCL2.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/12296854/">https://pubmed.ncbi.nlm.nih.gov/12296854/</a>
@@ -1667,12 +1672,12 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
-              <th>RIPK2</th>
+              <th>TRAF6</th>
               <td>
-                <p>This leads to RIPK2 activation, which depends on autophosphorylation in residues Ser176 and Tyr474, an essential and enhancing site respectively (36, 37), and downstream activation of transforming growth factor beta-activated kinase 1 (TAK1) (38–40). TAK1 consecutively phosphorylates the IKK complex triggering NF-κB and MAPK pathway activation.</p>
+                <p>Intriguingly, TGF-beta-induced TRAF6-mediated Lys 63-linked polyubiquitylation of TAK1 Lys 34 correlates with TAK1 activation. Our data show that TGF-beta specifically activates TAK1 through interaction of TbetaRI with TRAF6, whereas activation of Smad2 is not dependent on TRAF6.</p>
                 <ol class="links">
                   <li>
-                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6536010/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6536010/</a>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/18758450/">https://pubmed.ncbi.nlm.nih.gov/18758450/</a>
                   </li>
                 </ol>
               </td>
@@ -1689,12 +1694,12 @@ window.onload = makeStableStatesClickable;
               </td>
             </tr>
             <tr>
-              <th>TRAF6</th>
+              <th>RIPK2</th>
               <td>
-                <p>Intriguingly, TGF-beta-induced TRAF6-mediated Lys 63-linked polyubiquitylation of TAK1 Lys 34 correlates with TAK1 activation. Our data show that TGF-beta specifically activates TAK1 through interaction of TbetaRI with TRAF6, whereas activation of Smad2 is not dependent on TRAF6.</p>
+                <p>This leads to RIPK2 activation, which depends on autophosphorylation in residues Ser176 and Tyr474, an essential and enhancing site respectively (36, 37), and downstream activation of transforming growth factor beta-activated kinase 1 (TAK1) (38–40). TAK1 consecutively phosphorylates the IKK complex triggering NF-κB and MAPK pathway activation.</p>
                 <ol class="links">
                   <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/18758450/">https://pubmed.ncbi.nlm.nih.gov/18758450/</a>
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6536010/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6536010/</a>
                   </li>
                 </ol>
               </td>
@@ -1723,23 +1728,23 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
-              <th>TAK1</th>
-              <td>
-                <p>Once activated, acts as an upstream activator of the MKK/JNK signal transduction cascade and the p38 MAPK signal transduction cascade </p>
-                <ol class="links">
-                  <li>
-                    <a href="https://www.uniprot.org/uniprotkb/O43318/entry">https://www.uniprot.org/uniprotkb/O43318/entry</a>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
               <th>JAK1_TYK2</th>
               <td>
                 <p>intracellular kinases such as janus kinase-1 (IL-22R1 activator) and tyrosine kinase-2 (IL-10R2 activator) activate various signaling factors including P38, Akt (Protein Kinase B), mitogen-activated protein kinase, extracellular signal-regulated kinase-1/2, and c-Jun N-terminal kinase.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/32365282/">https://pubmed.ncbi.nlm.nih.gov/32365282/</a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th>TAK1</th>
+              <td>
+                <p>Once activated, acts as an upstream activator of the MKK/JNK signal transduction cascade and the p38 MAPK signal transduction cascade. </p>
+                <ol class="links">
+                  <li>
+                    <a href="https://www.uniprot.org/uniprotkb/O43318/entry">https://www.uniprot.org/uniprotkb/O43318/entry</a>
                   </li>
                 </ol>
               </td>
@@ -1768,23 +1773,23 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
-              <th>TAK1</th>
-              <td>
-                <p>Once activated, acts as an upstream activator of the MKK/JNK signal transduction cascade and the p38 MAPK signal transduction</p>
-                <ol class="links">
-                  <li>
-                    <a href="https://www.uniprot.org/uniprotkb/O43318/entry">https://www.uniprot.org/uniprotkb/O43318/entry</a>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
               <th>JAK1_TYK2</th>
               <td>
                 <p>intracellular kinases such as janus kinase-1 (IL-22R1 activator) and tyrosine kinase-2 (IL-10R2 activator) activate various signaling factors including P38, Akt (Protein Kinase B), mitogen-activated protein kinase, extracellular signal-regulated kinase-1/2, and c-Jun N-terminal kinase.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/32365282/">https://pubmed.ncbi.nlm.nih.gov/32365282/</a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th>TAK1</th>
+              <td>
+                <p>Once activated, acts as an upstream activator of the MKK/JNK signal transduction cascade and the p38 MAPK signal transduction.</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://www.uniprot.org/uniprotkb/O43318/entry">https://www.uniprot.org/uniprotkb/O43318/entry</a>
                   </li>
                 </ol>
               </td>
@@ -1815,7 +1820,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>JNK1</th>
               <td>
-                <p>Both p38 MAPK and JNK pathways control the transcription factors activator protein-1 (AP-1), </p>
+                <p>Both p38 MAPK and JNK pathways control the transcription factors activator protein-1 (AP-1).</p>
                 <ol class="links">
                   <li>
                     <a href="https://www.uniprot.org/uniprotkb/O43318/entry">https://www.uniprot.org/uniprotkb/O43318/entry</a>
@@ -1826,7 +1831,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>PPARG</th>
               <td>
-                <p>Nuclear Factor kappa-light-chain-enhancer of activated B cells (NF-κB) and c-Jun NH2-terminal kinase (JNK)/p38 mitogen-activated protein kinase (MAPK) pathway activation. PPARs are important for IBD because many of these signaling pathways are downregulated by the activation of PPARγ (</p>
+                <p>Nuclear Factor kappa-light-chain-enhancer of activated B cells (NF-κB) and c-Jun NH2-terminal kinase (JNK)/p38 mitogen-activated protein kinase (MAPK) pathway activation. PPARs are important for IBD because many of these signaling pathways are downregulated by the activation of PPARγ.</p>
                 <ol class="links">
                   <li>
                     <a href="https://www.frontiersin.org/articles/10.3389/fphar.2020.00730/full">https://www.frontiersin.org/articles/10.3389/fphar.2020.00730/full</a>
@@ -1837,7 +1842,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>P38</th>
               <td>
-                <p>Both p38 MAPK and JNK pathways control the transcription factors activator protein-1 (AP-1), </p>
+                <p>Both p38 MAPK and JNK pathways control the transcription factors activator protein-1 (AP-1).</p>
                 <ol class="links">
                   <li>
                     <a href="https://www.uniprot.org/uniprotkb/O43318/entry">https://www.uniprot.org/uniprotkb/O43318/entry</a>
@@ -1869,6 +1874,20 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
+              <th>IL22R</th>
+              <td>
+                <p>After binding of IL-22 to the IL-22R1/IL-10R2 complex, intracellular signaling pathways are activated, which eventually results in phosphorylation of the serine and tyrosine amino acids in the signal transducer and activator of transcription-1 (STAT1), STAT3, and STAT5 signaling molecules. </p>
+                <ol class="links">
+                  <li>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/32365282/">https://pubmed.ncbi.nlm.nih.gov/32365282/</a>
+                  </li>
+                  <li>
+                    <a href=":"></a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
               <th>mTORC1</th>
               <td>
                 <p>mTORC1 activates COX-2 transcription via phosphorylating STAT3 and enhancing it’s binding to the COX-2 promoter.</p>
@@ -1882,19 +1901,10 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>PTPN2</th>
               <td>
-                <p>The PTPN2 gene encodes the T-cell<br />protein tyrosine phosphatase (TCPTP), which is essential for regulation of in-<br />flammation. TCPTP partly modulates inflammation via control of inflamma-<br />tory signaling pathways, by namely inhibiting Janus kinase (JAK) enzymes,<br />and signal transducer and activator of transcription (STAT) molecules</p>
-              </td>
-            </tr>
-            <tr>
-              <th>IL22R</th>
-              <td>
-                <p>After binding of IL-22 to the IL-22R1/IL-10R2 complex, intracellular signaling pathways are activated, which eventually results in phosphorylation of the serine and tyrosine amino acids in the signal transducer and activator of transcription-1 (STAT1), STAT3, and STAT5 signaling molecules. </p>
+                <p>The PTPN2 gene encodes the T-cell<br />protein tyrosine phosphatase (TCPTP), which is essential for regulation of in-<br />flammation. TCPTP partly modulates inflammation via control of inflamma-<br />tory signaling pathways, by namely inhibiting Janus kinase (JAK) enzymes,<br />and signal transducer and activator of transcription (STAT) molecules.</p>
                 <ol class="links">
                   <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/32365282/">https://pubmed.ncbi.nlm.nih.gov/32365282/</a>
-                  </li>
-                  <li>
-                    <a href=":"></a>
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8409587/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8409587/</a>
                   </li>
                 </ol>
               </td>
@@ -1970,7 +1980,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>DUOX2</th>
               <td>
-                <p> (DUOX2), which prevents bacterial colonization of the mucosa through the production of hydrogen peroxide (H2O2), </p>
+                <p> (DUOX2), which prevents bacterial colonization of the mucosa through the production of hydrogen peroxide (H2O2).</p>
                 <ol class="links">
                   <li>
                     <a href="https://academic.oup.com/ibdjournal/article/27/Supplement_1/S26/6105416">https://academic.oup.com/ibdjournal/article/27/Supplement_1/S26/6105416</a>
@@ -2002,12 +2012,12 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
-              <th>JAK1_JAK2</th>
+              <th>IL22R</th>
               <td>
-                <p>IFNγ signal transduction predominantly activates STAT1 homodimers,</p>
+                <p>After binding of IL-22 to the IL-22R1/IL-10R2 complex, intracellular signaling pathways are activated, which eventually results in phosphorylation of the serine and tyrosine amino acids in the signal transducer and activator of transcription-1 (STAT1), STAT3, and STAT5 signaling molecules. </p>
                 <ol class="links">
                   <li>
-                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7165917/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7165917/</a>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/32365282/">https://pubmed.ncbi.nlm.nih.gov/32365282/</a>
                   </li>
                 </ol>
               </td>
@@ -2015,7 +2025,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>PTPN2</th>
               <td>
-                <p>The PTPN2 gene encodes the T-cell<br />protein tyrosine phosphatase (TCPTP), which is essential for regulation of in-<br />flammation. TCPTP partly modulates inflammation via control of inflamma-<br />tory signaling pathways, by namely inhibiting Janus kinase (JAK) enzymes,<br />and signal transducer and activator of transcription (STAT) molecules</p>
+                <p>The PTPN2 gene encodes the T-cell<br />protein tyrosine phosphatase (TCPTP), which is essential for regulation of in-<br />flammation. TCPTP partly modulates inflammation via control of inflamma-<br />tory signaling pathways, by namely inhibiting Janus kinase (JAK) enzymes,<br />and signal transducer and activator of transcription (STAT) molecules.</p>
                 <ol class="links">
                   <li>
                     <a href="https://researchoutreach.org/articles/inflammatory-bowel-disease-epithelial-barrier-function/">https://researchoutreach.org/articles/inflammatory-bowel-disease-epithelial-barrier-function/</a>
@@ -2026,7 +2036,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>JAK1_TYK2</th>
               <td>
-                <p>Both type I and type II IFNs also induce the formation of STAT1–STAT1 </p>
+                <p>Both type I and type II IFNs also induce the formation of STAT1–STAT1.</p>
                 <ol class="links">
                   <li>
                     <a href="https://www.nature.com/articles/nri1604">https://www.nature.com/articles/nri1604</a>
@@ -2035,12 +2045,12 @@ window.onload = makeStableStatesClickable;
               </td>
             </tr>
             <tr>
-              <th>IL22R</th>
+              <th>JAK1_JAK2</th>
               <td>
-                <p>After binding of IL-22 to the IL-22R1/IL-10R2 complex, intracellular signaling pathways are activated, which eventually results in phosphorylation of the serine and tyrosine amino acids in the signal transducer and activator of transcription-1 (STAT1), STAT3, and STAT5 signaling molecules. </p>
+                <p>IFNγ signal transduction predominantly activates STAT1 homodimers.</p>
                 <ol class="links">
                   <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/32365282/">https://pubmed.ncbi.nlm.nih.gov/32365282/</a>
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7165917/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7165917/</a>
                   </li>
                 </ol>
               </td>
@@ -2072,20 +2082,9 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
-              <th>PI3K</th>
-              <td>
-                <p>AKT is a downstream target of PI3Ks</p>
-                <ol class="links">
-                  <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/25352295/">https://pubmed.ncbi.nlm.nih.gov/25352295/</a>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
               <th>PTPA</th>
               <td>
-                <p>AKT is inhibited by protein phosphatase-2A (PP2A), which in turn may be inactivated by ROS</p>
+                <p>AKT is inhibited by protein phosphatase-2A (PP2A), which in turn may be inactivated by ROS.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/25352295/">https://pubmed.ncbi.nlm.nih.gov/25352295/</a>
@@ -2103,6 +2102,17 @@ window.onload = makeStableStatesClickable;
                   </li>
                   <li>
                     <a href=":"></a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th>PI3K</th>
+              <td>
+                <p>AKT is a downstream target of PI3Ks.</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/25352295/">https://pubmed.ncbi.nlm.nih.gov/25352295/</a>
                   </li>
                 </ol>
               </td>
@@ -2142,23 +2152,23 @@ window.onload = makeStableStatesClickable;
               </td>
             </tr>
             <tr>
+              <th>STAT1</th>
+              <td>
+                <p>These apoptosis ISGs were predominantly proapoptotic genes (including BAK1, CASP3, CASP8, CASP10, FAS, TNFSF10A, and TNFRSF10A) and were stimulated by IFN-II or IFN-I treatments.</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://journals.aai.org/immunohorizons/article/6/7/416/234080/Transcriptional-and-Cytotoxic-Responses-of-Human">https://journals.aai.org/immunohorizons/article/6/7/416/234080/Transcriptional-and-Cytotoxic-Responses-of-Human</a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
               <th>FADD</th>
               <td>
                 <p>Extrinsic apoptosis relies on the formation of a death-inducing signaling complex (DISC), which always includes FADD and caspase-8. In the case of ligation of TNFR1, another adapter, tumor necrosis factor receptor type 1-associated DEATH domain (TRADD), is first engaged, which in turn recruits FADD, and TRADD is required for apoptosis induced by TNF, but not for that induced by other death receptor ligands. Other death receptors engage FADD directly.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/28462525/">https://pubmed.ncbi.nlm.nih.gov/28462525/</a>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <th>STAT1</th>
-              <td>
-                <p>These apoptosis ISGs were predominantly proapoptotic genes (including BAK1, CASP3, CASP8, CASP10, FAS, TNFSF10A, and TNFRSF10A) and were stimulated by IFN-II or IFN-I treatments </p>
-                <ol class="links">
-                  <li>
-                    <a href="https://journals.aai.org/immunohorizons/article/6/7/416/234080/Transcriptional-and-Cytotoxic-Responses-of-Human">https://journals.aai.org/immunohorizons/article/6/7/416/234080/Transcriptional-and-Cytotoxic-Responses-of-Human</a>
                   </li>
                 </ol>
               </td>
@@ -2187,23 +2197,23 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
+              <th>CASP8</th>
+              <td>
+                <p>Noteworthy, complex IIa-associated active caspase-8 and caspase-8/FLIPL heterodimers, which have a limited enzymatic activity, cleave RIPK1 and RIPK3 and prevent so complex IIb triggered formation of necroptosis-inducing oligomeric RIPK1/RIPK3 aggregates.</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://www.frontiersin.org/articles/10.3389/fcell.2019.00091/full">https://www.frontiersin.org/articles/10.3389/fcell.2019.00091/full</a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
               <th>RIPK1</th>
               <td>
                 <p>When caspase-8 activity is inhibited the amyloid-like RIP1/RIP3 necrosome is formed.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/27308332/">https://pubmed.ncbi.nlm.nih.gov/27308332/</a>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <th>CASP8</th>
-              <td>
-                <p>Noteworthy, complex IIa-associated active caspase-8 and caspase-8/FLIPL heterodimers, which have a limited enzymatic activity, cleave RIPK1 and RIPK3 and prevent so complex IIb triggered formation of necroptosis-inducing oligomeric RIPK1/RIPK3 aggregates</p>
-                <ol class="links">
-                  <li>
-                    <a href="https://www.frontiersin.org/articles/10.3389/fcell.2019.00091/full">https://www.frontiersin.org/articles/10.3389/fcell.2019.00091/full</a>
                   </li>
                 </ol>
               </td>
@@ -2232,12 +2242,34 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
+              <th>IL22R</th>
+              <td>
+                <p>IL-22 induced cell proliferation is regulated by PI3K/Akt/mTOR signaling cascade.</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/22840496/">https://pubmed.ncbi.nlm.nih.gov/22840496/</a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
               <th>PTEN</th>
               <td>
                 <p>The activity of PI3Ks can be inhibited by PTEN, which also has protein and lipid phosphatase activity (33). Therefore, PTEN negatively regulates AKT signaling (34). <br />The PI3K/AKT/mTOR signaling pathway is activated in Crohn’s disease by PTEN downregulation, which may be involved in the pathogenesis this disease.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/25352295/">https://pubmed.ncbi.nlm.nih.gov/25352295/</a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th>IFNAR</th>
+              <td>
+                <p>Both type I and type II IFNs regulate activation of the phosphatidylinositol 3-kinase (PI3K)-signalling pathway.</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://www.nature.com/articles/nri1604">https://www.nature.com/articles/nri1604</a>
                   </li>
                 </ol>
               </td>
@@ -2256,32 +2288,10 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>ROS</th>
               <td>
-                <p>ROS activate nuclear factor‑κB (NF‑κB) via IκB kinase (IKK) through the PI3K/AKT/PTEN pathway. <br />Reactive oxygen species (ROS) play an important role in inflammation processes</p>
+                <p>ROS activate nuclear factor‑κB (NF‑κB) via IκB kinase (IKK) through the PI3K/AKT/PTEN pathway. <br />Reactive oxygen species (ROS) play an important role in inflammation processes.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/25352295/">https://pubmed.ncbi.nlm.nih.gov/25352295/</a>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <th>IL22R</th>
-              <td>
-                <p>IL-22 induced cell proliferation is regulated by PI3K/Akt/mTOR signaling cascade</p>
-                <ol class="links">
-                  <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/22840496/">https://pubmed.ncbi.nlm.nih.gov/22840496/</a>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <th>IFNAR</th>
-              <td>
-                <p>Both type I and type II IFNs regulate activation of the phosphatidylinositol 3-kinase (PI3K)-signalling pathway.</p>
-                <ol class="links">
-                  <li>
-                    <a href="https://www.nature.com/articles/nri1604">https://www.nature.com/articles/nri1604</a>
                   </li>
                 </ol>
               </td>
@@ -2344,23 +2354,23 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
-              <th>ROS</th>
+              <th>CREB1</th>
               <td>
-                <p>AKT is inhibited by protein phosphatase-2A (PP2A), which in turn may be inactivated by ROS</p>
+                <p> PP2A-Aα is positively regulated by multiple transcription factors including Ets-1, CREB.</p>
                 <ol class="links">
                   <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/25352295/">https://pubmed.ncbi.nlm.nih.gov/25352295/</a>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/22827437/">https://pubmed.ncbi.nlm.nih.gov/22827437/</a>
                   </li>
                 </ol>
               </td>
             </tr>
             <tr>
-              <th>CREB1</th>
+              <th>ROS</th>
               <td>
-                <p> PP2A-Aα is positively regulated by multiple transcription factors including Ets-1, CREB, and</p>
+                <p>AKT is inhibited by protein phosphatase-2A (PP2A), which in turn may be inactivated by ROS.</p>
                 <ol class="links">
                   <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/22827437/">https://pubmed.ncbi.nlm.nih.gov/22827437/</a>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/25352295/">https://pubmed.ncbi.nlm.nih.gov/25352295/</a>
                   </li>
                 </ol>
               </td>
@@ -2389,23 +2399,23 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
-              <th>TAK1</th>
-              <td>
-                <p>This result suggests that ikkgamma/nemo binds to the polyubiquitinated tak1.</p>
-                <ol class="links">
-                  <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/20038579/">https://pubmed.ncbi.nlm.nih.gov/20038579/</a>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
               <th>TRAF6</th>
               <td>
                 <p>TRAF6 is a signal transducer in the NF-kappaB pathway that activates IkappaB kinase (IKK) in response to proinflammatory cytokines.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/11057907/">https://pubmed.ncbi.nlm.nih.gov/11057907/</a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th>TAK1</th>
+              <td>
+                <p>This result suggests that ikkgamma/nemo binds to the polyubiquitinated tak1.</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/20038579/">https://pubmed.ncbi.nlm.nih.gov/20038579/</a>
                   </li>
                 </ol>
               </td>
@@ -2447,7 +2457,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>STAT3</th>
               <td>
-                <p>STAT3 activation can also induce the expression of suppressors of cytokine signaling (SOCS) 3 that has been shown to play an important role in the suppression of acute colitis</p>
+                <p>STAT3 activation can also induce the expression of suppressors of cytokine signaling (SOCS) 3 that has been shown to play an important role in the suppression of acute colitis.</p>
                 <ol class="links">
                   <li>
                     <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2743999/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2743999/</a>
@@ -2528,7 +2538,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>Flagellin</th>
               <td>
-                <p>Mainly, TLR5 recognizes bacterial flagellin,</p>
+                <p>Mainly, TLR5 recognizes bacterial flagellin.</p>
                 <ol class="links">
                   <li>
                     <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5797585/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5797585/</a>
@@ -2654,7 +2664,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>NOD1</th>
               <td>
-                <p>upon activation, NOD1 and NOD2 recruit RIPK2 through CARD domains (31, 32),</p>
+                <p>upon activation, NOD1 and NOD2 recruit RIPK2 through CARD domains (31, 32).</p>
                 <ol class="links">
                   <li>
                     <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6536010/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6536010/</a>
@@ -2728,7 +2738,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>COX2</th>
               <td>
-                <p>COX-2 derived PGs are involved in a variety of pathologic processes, including IBD<br />Multiple lines of evidence have demonstrated that PGE2 mediates the pro-inflammatory and tumor-promoting effects of COX-2 in IBD</p>
+                <p>COX-2 derived PGs are involved in a variety of pathologic processes, including IBD<br />Multiple lines of evidence have demonstrated that PGE2 mediates the pro-inflammatory and tumor-promoting effects of COX-2 in IBD.</p>
                 <ol class="links">
                   <li>
                     <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3181054/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3181054/</a>
@@ -2852,7 +2862,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>NFKB</th>
               <td>
-                <p>TNFα-induced protein 3 (TNFAIP3) is a NF-κB-induced gene that acts in a negative-feedback loop to inhibit NF-κB activation</p>
+                <p>TNFα-induced protein 3 (TNFAIP3) is a NF-κB-induced gene that acts in a negative-feedback loop to inhibit NF-κB activation.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/22595989/">https://pubmed.ncbi.nlm.nih.gov/22595989/</a>
@@ -2886,7 +2896,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>NFKB</th>
               <td>
-                <p>RESULTS: Muramyl dipeptide-induced increases in NOD2, interleukin-8, and CXCL3 expression</p>
+                <p>Muramyl dipeptide-induced increases in NOD2, interleukin-8, and CXCL3 expression.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/24297055/">https://pubmed.ncbi.nlm.nih.gov/24297055/</a>
@@ -3097,23 +3107,23 @@ window.onload = makeStableStatesClickable;
               <th>Comment</th>
             </tr>
             <tr>
+              <th>PTPN2</th>
+              <td>
+                <p>The PTPN2 gene encodes the T-cell<br />protein tyrosine phosphatase (TCPTP), which is essential for regulation of in-<br />flammation. TCPTP partly modulates inflammation via control of inflamma-<br />tory signaling pathways, by namely inhibiting Janus kinase (JAK) enzymes,<br />and signal transducer and activator of transcription (STAT) molecules.</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://researchoutreach.org/articles/inflammatory-bowel-disease-epithelial-barrier-function/">https://researchoutreach.org/articles/inflammatory-bowel-disease-epithelial-barrier-function/</a>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
               <th>IFNGR</th>
               <td>
                 <p>IFNGR1 binds to JAK1 whereas IFNGR2 binds to JAK2. </p>
                 <ol class="links">
                   <li>
                     <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7165917/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7165917/</a>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <th>PTPN2</th>
-              <td>
-                <p>The PTPN2 gene encodes the T-cell<br />protein tyrosine phosphatase (TCPTP), which is essential for regulation of in-<br />flammation. TCPTP partly modulates inflammation via control of inflamma-<br />tory signaling pathways, by namely inhibiting Janus kinase (JAK) enzymes,<br />and signal transducer and activator of transcription (STAT) molecules</p>
-                <ol class="links">
-                  <li>
-                    <a href="https://researchoutreach.org/articles/inflammatory-bowel-disease-epithelial-barrier-function/">https://researchoutreach.org/articles/inflammatory-bowel-disease-epithelial-barrier-function/</a>
                   </li>
                 </ol>
               </td>
@@ -3144,7 +3154,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>IRF1</th>
               <td>
-                <p>IRF1 is a transcription factor that can provide additional positive feedback stimulation of ISGs,</p>
+                <p>IRF1 is a transcription factor that can provide additional positive feedback stimulation of ISGs.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/35790340/">https://pubmed.ncbi.nlm.nih.gov/35790340/</a>
@@ -3189,7 +3199,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>AKT</th>
               <td>
-                <p>AKT inhibits GTPase-activating protein (GAP) activity by phosphorylating TSC2, which leads to activation of the mTOR complex </p>
+                <p>AKT inhibits GTPase-activating protein (GAP) activity by phosphorylating TSC2, which leads to activation of the mTOR complex. </p>
                 <ol class="links">
                   <li>
                     <a href="https://www.spandidos-publications.com/10.3892/ijmm.2014.1981">https://www.spandidos-publications.com/10.3892/ijmm.2014.1981</a>
@@ -3200,7 +3210,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>TSC1</th>
               <td>
-                <p>TSC1, a key negative upstream regulator of mTORC1, </p>
+                <p>TSC1, a key negative upstream regulator of mTORC1. </p>
                 <ol class="links">
                   <li>
                     <a href="https://www.nature.com/articles/s41385-018-0018-3">https://www.nature.com/articles/s41385-018-0018-3</a>
@@ -3281,7 +3291,12 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>AKT</th>
               <td>
-                <p>pAkt to phosphorylate BAD</p>
+                <p>Akt phosphorylates BAD in vitro and in vivo, and blocks the BAD-induced death.</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/9346240/">https://pubmed.ncbi.nlm.nih.gov/9346240/</a>
+                  </li>
+                </ol>
               </td>
             </tr>
           </table>
@@ -3344,13 +3359,18 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>CASP8</th>
               <td>
-                <p>TNFR1, the low-affinity TNF receptor, is initiated by highlocal TNF concentrations and induces caspase-3–dependentepithelial apoptosis</p>
+                <p>The effector caspases, caspase-3 and caspase-7, exist as dimeric zymogens that are activated by cleavage between their large and small subunits. Fully matured caspase-8 cleaves these zymogens and thus activates them.</p>
+                <ol class="links">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5417704/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5417704/</a>
+                  </li>
+                </ol>
               </td>
             </tr>
             <tr>
               <th>STAT1</th>
               <td>
-                <p>These apoptosis ISGs were predominantly proapoptotic genes (including BAK1, CASP3, CASP8, CASP10, FAS, TNFSF10A, and TNFRSF10A) and were stimulated by IFN-II or IFN-I treatments </p>
+                <p>These apoptosis ISGs were predominantly proapoptotic genes (including BAK1, CASP3, CASP8, CASP10, FAS, TNFSF10A, and TNFRSF10A) and were stimulated by IFN-II or IFN-I treatments.</p>
                 <ol class="links">
                   <li>
                     <a href="https://journals.aai.org/immunohorizons/article/6/7/416/234080/Transcriptional-and-Cytotoxic-Responses-of-Human">https://journals.aai.org/immunohorizons/article/6/7/416/234080/Transcriptional-and-Cytotoxic-Responses-of-Human</a>
@@ -3480,6 +3500,11 @@ window.onload = makeStableStatesClickable;
               <th>STAT1</th>
               <td>
                 <p>Accordingly, pre-treatment of colonoids with IBD-approved pan-Janus Kinase (JAK) inhibitor Tofacitinib led to the downregulation of TNF+Poly(I:C)-dependent MHC-II expression associated with the abrogation of STAT1 activation. </p>
+                <ol class="links">
+                  <li>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/35655783/">https://pubmed.ncbi.nlm.nih.gov/35655783/</a>
+                  </li>
+                </ol>
               </td>
             </tr>
           </table>
@@ -3517,7 +3542,7 @@ window.onload = makeStableStatesClickable;
               </td>
             </tr>
             <tr>
-              <th>AP1</th>
+              <th>STAT3</th>
               <td>
                 <p>Once our body suffered injury, infection or other stimuli, REG3A expression was induced through the recognition receptor and adaptors, including TLR, IL-17RA, IL-22R, SCFA receptor or MyD88.</p>
                 <ol class="links">
@@ -3528,7 +3553,7 @@ window.onload = makeStableStatesClickable;
               </td>
             </tr>
             <tr>
-              <th>STAT3</th>
+              <th>AP1</th>
               <td>
                 <p>Once our body suffered injury, infection or other stimuli, REG3A expression was induced through the recognition receptor and adaptors, including TLR, IL-17RA, IL-22R, SCFA receptor or MyD88.</p>
                 <ol class="links">
@@ -3559,7 +3584,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>NFKB</th>
               <td>
-                <p> WT colonoid stimulation with IFNγ and the Crohn’s disease-associated pathobiont AIEC induced Duox2 and Duoxa2 expression</p>
+                <p> WT colonoid stimulation with IFNγ and the Crohn’s disease-associated pathobiont AIEC induced Duox2 and Duoxa2 expression.</p>
                 <ol class="links">
                   <li>
                     <a href="https://academic.oup.com/ibdjournal/article/27/Supplement_1/S26/6105416">https://academic.oup.com/ibdjournal/article/27/Supplement_1/S26/6105416</a>
@@ -3570,7 +3595,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>STAT1</th>
               <td>
-                <p> WT colonoid stimulation with IFNγ and the Crohn’s disease-associated pathobiont AIEC induced Duox2 and Duoxa2 expression</p>
+                <p> WT colonoid stimulation with IFNγ and the Crohn’s disease-associated pathobiont AIEC induced Duox2 and Duoxa2 expression.</p>
                 <ol class="links">
                   <li>
                     <a href="https://academic.oup.com/ibdjournal/article/27/Supplement_1/S26/6105416">https://academic.oup.com/ibdjournal/article/27/Supplement_1/S26/6105416</a>
@@ -3649,7 +3674,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>NFKB</th>
               <td>
-                <p>IL-17A showed a synergistic effect with IL-22 and TNF-α in inducing colonic epithelial expression of LCN2</p>
+                <p>IL-17A showed a synergistic effect with IL-22 and TNF-α in inducing colonic epithelial expression of LCN2.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/26263469/">https://pubmed.ncbi.nlm.nih.gov/26263469/</a>
@@ -3660,7 +3685,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>STAT3</th>
               <td>
-                <p>IL-17A showed a synergistic effect with IL-22 and TNF-α in inducing colonic epithelial expression of LCN2</p>
+                <p>IL-17A showed a synergistic effect with IL-22 and TNF-α in inducing colonic epithelial expression of LCN2.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/26263469/">https://pubmed.ncbi.nlm.nih.gov/26263469/</a>
@@ -3694,7 +3719,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>NFKB</th>
               <td>
-                <p>IL-1β, IL-4, IL-13, TNFα, or lipopolysaccharide enhanced MMP-7 expression in human colonic epithelial cells</p>
+                <p>IL-1β, IL-4, IL-13, TNFα, or lipopolysaccharide enhanced MMP-7 expression in human colonic epithelial cells.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/36275703/">https://pubmed.ncbi.nlm.nih.gov/36275703/</a>
@@ -3838,7 +3863,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>IFNL1_e</th>
               <td>
-                <p>IFN-λ signaling through the IFN-λ-receptor (IFNλR) on IECs </p>
+                <p>IFN-λ signaling through the IFN-λ-receptor (IFNλR) on IECs.</p>
                 <ol class="links">
                   <li>
                     <a href="https://www.frontiersin.org/articles/10.3389/fimmu.2017.00749/full">https://www.frontiersin.org/articles/10.3389/fimmu.2017.00749/full</a>
@@ -3872,7 +3897,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>ISGF3</th>
               <td>
-                <p>IFN-stimulated gene factor 3 (ISGF3) which binds to IFN-stimulated response DNA element (ISRE) and induces transcription of ISGs</p>
+                <p>IFN-stimulated gene factor 3 (ISGF3) which binds to IFN-stimulated response DNA element (ISRE) and induces transcription of ISGs.</p>
                 <ol class="links">
                   <li>
                     <a href="Østvik AE, Svendsen TD, Granlund AVB, Doseth B, Skovdahl HK, Bakke I, Thorsvik S, Afroz W, Walaas GA, Mollnes TE, Gustafsson BI, Sandvik AK, Bruland T. Intestinal Epithelial Cells Express Immunomodulatory ISG15 During Active Ulcerative Colitis and Crohn's Disease. J Crohns Colitis. 2020 Jul 30;14(7):920-934. doi: 10.1093/ecco-jcc/jjaa022. PMID: 32020185; PMCID: PMC7392169.">Østvik AE, Svendsen TD, Granlund AVB, Doseth B, Skovdahl HK, Bakke I, Thorsvik S, Afroz W, Walaas GA, Mollnes TE, Gustafsson BI, Sandvik AK, Bruland T. Intestinal Epithelial Cells Express Immunomodulatory ISG15 During Active Ulcerative Colitis and Crohn's Disease. J Crohns Colitis. 2020 Jul 30;14(7):920-934. doi: 10.1093/ecco-jcc/jjaa022. PMID: 32020185; PMCID: PMC7392169.</a>
@@ -3906,7 +3931,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>STAT1</th>
               <td>
-                <p>We treated organoids from ileum, ascending colon, and sigmoid colon of subject 005 with titrations of IFN-I, IFN-II, or IFN-III and observed that CXCL10 and IRF1 were stimulated to the greatest extent by IFN-II treatment,</p>
+                <p>We treated organoids from ileum, ascending colon, and sigmoid colon of subject 005 with titrations of IFN-I, IFN-II, or IFN-III and observed that CXCL10 and IRF1 were stimulated to the greatest extent by IFN-II treatment.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/35790340/">https://pubmed.ncbi.nlm.nih.gov/35790340/</a>
@@ -3951,7 +3976,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>STAT1</th>
               <td>
-                <p>We treated organoids from ileum, ascending colon, and sigmoid colon of subject 005 with titrations of IFN-I, IFN-II, or IFN-III and observed that CXCL10 and IRF1 were stimulated to the greatest extent by IFN-II treatment,</p>
+                <p>We treated organoids from ileum, ascending colon, and sigmoid colon of subject 005 with titrations of IFN-I, IFN-II, or IFN-III and observed that CXCL10 and IRF1 were stimulated to the greatest extent by IFN-II treatment.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/35790340/">https://pubmed.ncbi.nlm.nih.gov/35790340/</a>
@@ -3985,7 +4010,7 @@ window.onload = makeStableStatesClickable;
             <tr>
               <th>AKT</th>
               <td>
-                <p>Whereas Akt1 phosphorylates p21</p>
+                <p>Whereas Akt1 phosphorylates p21.</p>
                 <ol class="links">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/16982699/">https://pubmed.ncbi.nlm.nih.gov/16982699/</a>
